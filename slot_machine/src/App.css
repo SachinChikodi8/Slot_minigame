@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+  }
+  
+  hr {
+    border-style: none none dotted none;
+    border-width: 10px;
+    border-collapse: collapse;
+    border-color: whitesmoke;
+    width: 30%;
+  }
+  
+  .message {
+    font-family: "Anton", sans-serif;
+  }
+  
+  .heading {
+    font-family: "Press Start 2P", cursive;
+    font-size: 2rem;
+    margin: 0.7em auto 1em auto;
+    text-align: center;
+  }
+  
+  .head_design {
+    animation-name: color_cycle;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes color_cycle {
+    0% {
+      color: gold;
+    }
+    100% {
+      color: whitesmoke;
+    }
+  }
+  
+  .slots {
+    font-size: medium;
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 10%;
+    border-style: groove;
+    backdrop-filter: blur(5px);
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px white;
+  }
+  
+  .success {
+    color: gold;
+  }
+  
+  /* .roll {
+    width: 10%;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 5px 0px white;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 1.2rem auto;
+  } */
+  
+  /* .roll {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid black;
+    backdrop-filter: blur(3px);
+    color: cyan;
+    padding: 1rem 0.75rem;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin: 1.2em auto;
+    cursor: pointer;
+  } */
+  /* 
+  .roll:focus {
+    outline: none;
+    cursor: pointer;
+  } */
+  /* 
+  .roll:active {
+    color: black;
+    background-color: gold;
+    box-shadow: 0 4px 5px 0px white;
+    transform: translateY(1px);
+  } */
+  
+  .btn-class {
+    align-self: center;
+    display: inline-block;
+    border: none;
+    color: #705d07;
+    border-radius: 12px 12px 12px 12px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    font-family: "Montserrat", sans-serif;
+    width: 15%;
+    height: auto;
+    margin: 1rem auto;
+    font-size: 20px;
+    padding: 10px 22px;
+    box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+      inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+    -moz-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+      inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+    -webkit-box-shadow: inset 0 1px 0 0 #fff6ce, inset 0 -1px 0 0 #e3c852,
+      inset 0 0 0 1px #fce88d, 0 2px 4px 0 #d4d4d4;
+    text-shadow: 0 1px 0 #fff;
+    background-image: linear-gradient(to left, #fce374, #fcdf5b);
+    background-color: #fce374;
+    cursor: pointer;
+  }
+  .btn-class:hover,
+  .btn-class:active {
+    border: none;
+    color: #705d07;
+    box-shadow: inset 0px 0px 0px 0 #fff6ce, inset 4px 5px 2px 0 #e3c852,
+      inset 0 0 0 1px #fce88d;
+    -moz-box-shadow: inset 0px 0px 0px 0 #fff6ce, inset 4px 5px 2px 0 #e3c852,
+      inset 0 0 0 1px #fce88d;
+    -webkit-box-shadow: inset 0px 0px 0px 0 #fff6ce, inset 4px 5px 2px 0 #e3c852,
+      inset 0 0 0 1px #fce88d;
+    background-color: #fcdf5b;
+  }
+  
+  .foot {
+    position: relative;
+    margin-left: 3px;
+  }
